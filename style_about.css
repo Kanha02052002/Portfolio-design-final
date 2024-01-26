@@ -6,8 +6,9 @@
 
 
 :root{
-    --clr-0:#00E0FF;
+
     --clr-1:#9400FF;
+    --clr-0:#00E0FF;
     --clr-2:#27005D;
     --clr-3:#AED2FF;
     --clr-4:#E4F1FF;
@@ -53,7 +54,10 @@ html {
     margin-right: 15px;
 
 }
-
+.hh{
+    display: inline-flex;
+    color:var(--clr-0);
+}
 .nav-title{
     color: #fff;
     text-decoration: none;
@@ -68,7 +72,7 @@ html {
 }
 .hh{
     display: inline-flex;
-    color:var(--clr-0);
+    color: var(--clr-0);
 }
 .navbar {
     display: inline-flex;
@@ -95,95 +99,45 @@ li {
     color: var(--clr-7);
     text-decoration: dashed;
 }
+
+#btn {
+    border-radius: 5px;
+    font-family: 'Rowdies';
+    font-weight: bolder;
+    font-size: 14px;
+    height: 45px;
+    color: black;
+    cursor: pointer;
+    width: 170px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--clr-7);
+    border: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+#btn:hover{
+    border: 1px solid var(--clr-2);
+    box-shadow: 5px 5px 10px #E4F1FF;
+}
+
+/* common */
 .nav-title-active{
-    padding: 5px;
-    border: 1px solid;
-    border-radius:5px ;
-    text-decoration: none;
+    padding-left:5px ;
+    padding-top:5px ;
+    padding-bottom:5px ;
+    padding-right:5px ;
+    border-radius: 5px;
     color: #000;
+    border: 1px solid;
     background-color: var(--clr-0);
+    text-decoration: none;
     box-shadow: 0px 0px 20px var(--clr-0);
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow .2s ease-in-out;
+    transition:box-shadow 0.2s ease-in-out,  background-color 0.2s ease-in-out,color 0.2s ease-in-out;
 }
 .nav-title-active:hover{
     background-color: #000;
     color: var(--clr-0);
     box-shadow: none;
-}
-
-
-#btn {
-    position: relative;
-    top: 20px;
-    left: -10px;
-    border-radius: 10px;
-    font-family: 'Rowdies';
-    font-weight: bolder;
-    font-size: 14px;
-    height: 45px;
-    color: var(--clr-0);
-    cursor: pointer;
-    width: 170px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: black;
-    border: 2px solid var(--clr-0);
-    transition:background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,color 0.2s ease-in-out;
-}
-#btn:hover{
-    color: black;
-    background-color: var(--clr-0) ;
-    box-shadow: 0px 0px 25px var(--clr-0);
-}
-
-.web-list{
-    list-style-type: none;
-    border: 2px solid var(--clr-0);
-    padding: 5px;
-    border-radius: 10px;
-    margin-right: 10px;
-    transition: box-shadow .2s ease-in-out;
-}
-.fa-brands,.fa-regular{
-    font-size: 30px;
-    padding: 5px;
-}
-.web-links{
-    position: relative;
-    margin-left: 130px;
-    margin-top: -75px;
-}
-.web-link-title{
-    font-size: 20px;
-    color: var(--clr-0);
-    text-decoration: none;
-}
-.web-list:hover{
-    box-shadow: 0px 0px 25px var(--clr-0);
-}
-
-.side{
-    display: inline-flex;
-}
-.start-content{
-    margin-top: 200px;
-    margin-left: 130px;
-}
-#h1-head{
-    font-family: 'Roboto Condensed';
-    font-size: 75px;
-}
-#h2-head{
-    font-family: 'Exo 2';
-    font-size: 15px;
-}
-#imglogo{
-    position: relative;
-    top: 10px;
-    left: 240px;
-    height: 500px;
-    width: 500px;
-    border-radius: 75px 85px;
 }
 .about-h1{
     display: inline-flex;
@@ -193,10 +147,11 @@ li {
     margin-top: 200px ;
 }
 .about-img{
-    border-radius: 10px 60px ;
+    border-radius: 60px 20px ;
     margin-left: 150px;
     height: 300px;
     width: 500px;
+    box-shadow: 0px 0px 30px var(--clr-0);
 }
 .about-h1{
     font-family: 'Roboto Condensed';
@@ -208,79 +163,10 @@ li {
 }
 .about-text{
     position: relative;
-    top: -40px;
+    top: -30px;
     padding-left: 50px;
     padding-right: 50px;
     font-weight: bold;
     font-size: 16px;
     font-family: 'Exo 2';
-}
-.skill-section{
-    margin-top: 150px;
-    margin-left: 80px;
-    margin-right: 80px;
-}
-.skill-head{
-    font-size: 55px;
-    font-family: 'Roboto Condensed';
-    font-weight: bolder;
-}
-.skilllogo{
-    height: 100px;
-    width: 100px;
-    
-}
-.pylogo{
-    font-size: 18px;
-    font-family: 'Exo 2';
-    font-weight: bolder;
-    transition: opacity 0.3s ease-in-out;
-}
-.logo-name{
-    margin-top: 25px;
-}
-#skill-align{
-    text-align: center;
-    margin: 24px;
-    padding: 65px;
-}
-.table-skill{
-    margin-top: 150px;
-    margin-left: 150px;
-    margin-right: 150px;
-    
-}
-.skilllogo-java{
-    height: 100px;
-    width: 50px;
-}
-.tech-skill{
-    position: relative;
-    
-    top: 95px;
-    font-size: 18px;
-    font-family: 'Exo 2';
-    font-weight: bolder;
-}
-.img-section{
-    margin-top: 150px;
-    font-family: 'Roboto Condensed';
-    font-weight: bolder;
-    font-size: 55px;
-}
-.pylogo:hover{
-    opacity: 0.3;
-}
-.foot-bar{
-    font-family: 'Exo 2';
-    color: #fff;
-    padding: 0px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-.footer-github{
-    text-decoration: none;
-    color: var(--clr-0);
 }
